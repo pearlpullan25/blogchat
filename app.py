@@ -16,7 +16,7 @@ if "messages" not in st.session_state.keys():  # Initialize the chat messages hi
         }
     ]
 
-@st.cache_resource(show_spinner=False)
+#@st.cache_resource(show_spinner=False)
 def load_data():
     reader = SimpleDirectoryReader('data')
     docs = reader.load_data()
